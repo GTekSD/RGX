@@ -1,7 +1,7 @@
 ReGeX | Pads are soft and easy u fool
 -----------
 
-## To remove only numbers from a text
+## 📝 To remove only numbers from a text
 
 **Find what:**
 ```
@@ -15,7 +15,7 @@ ReGeX | Pads are soft and easy u fool
 - +: This quantifier matches one or more occurrences of the preceding character or group, in this case, digits.
 
 
-## To add "text" to the beginning of every line in a text
+## 📝 To add "text" to the beginning of every line in a text
 
 **Find what:**
 ```
@@ -38,7 +38,7 @@ YOURTEXT\1
 - \1: Refers to the first capturing group (the entire line in this case).
 
 
-## To add "text" to the beginning of every line in a text
+## 📝 To removes the every line containing "YOURTEXT" a text
 
 **Find what:**
 ```
