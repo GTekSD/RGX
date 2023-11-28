@@ -37,6 +37,26 @@ YOURTEXT\1
 - text: The string you want to add to the beginning of each line.
 - \1: Refers to the first capturing group (the entire line in this case).
 
+## 📝 To add "text" to the ending of every line in a text
+
+**Find what:**
+```
+^(.+)$
+```
+**Replace with:** 
+```
+YOURTEXT
+```
+
+#### Explanation of the regular expression `^(.+)$`:
+
+- ^: Anchors the match to the beginning of a line.
+- (.+): Captures one or more characters (any character except line breaks) in a group.
+- $: Anchors the match to the end of a line.
+
+#### Explanation of the replacement pattern `YOURTEXT`:
+
+- text: The string you want to add to the beginning of each line.
 
 ## 📝 To removes the every line containing "YOURTEXT" a text
 
