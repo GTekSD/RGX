@@ -99,5 +99,5 @@ YOUR_TEXT
 - `.*`: Matches any sequence of characters.
 - `$`: Matches the end of a line.
 
-This regular expression finds the specified text (`YOUR_TEXT`) followed by any characters (`.*`) until the end of the line (`$`). By replacing it with an empty string, it removes everything after "TARGET_TEXT" in each line.
+This regular expression finds the specified text (`YOUR_TEXT`) followed by any characters (`.*`) until the end of the line (`$`). By replacing it with an empty string, it removes everything after `YOUR_TEXT` in each line.
 
