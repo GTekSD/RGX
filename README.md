@@ -69,16 +69,16 @@ YOUR_TEXT
 ### Explanation of the regular expression `.*YOUR_TEXT.*[\r]?[\n]`:
 
 - .*: Matches any sequence of characters.
-- YOURTEXT: The specific text you're searching for. Replace it with the text you want to match.
+- YOUR_TEXT: The specific text you're searching for. Replace it with the text you want to match.
 - .*: Matches any sequence of characters.
 - [\r]?: Optionally matches a carriage return (CR, \r).
 - [\n]: Matches a line feed (LF, \n).
 
-Matching a phone number: "/\d{3}-\d{3}-\d{4}/" matches a phone number in the format of XXX-XXX-XXXX.
+Matching a phone number: `/\d{3}-\d{3}-\d{4}/` matches a phone number in the format of XXX-XXX-XXXX.
 
-Matching an email address: "/\w+@\w+.\w+/" matches an email address in the format of username@domain.com.
+Matching an email address: `/\w+@\w+.\w+/` matches an email address in the format of username@domain.com.
 
-Matching a URL: "/^(http|https)://[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*)?/" matches a URL in the format of http://www.example.com/page.html.
+Matching a URL: `/^(http|https)://[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*)?/` matches a URL in the format of http://www.example.com/page.html.
 
 
 
