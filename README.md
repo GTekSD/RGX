@@ -1,4 +1,4 @@
-ReGeX | Pads are soft and easy u fool
+# 📝 ReGeX | Pads are soft and easy u fool 
 -----------
 
 ## 📝 To remove only numbers from a text
@@ -23,7 +23,7 @@ ReGeX | Pads are soft and easy u fool
 ```
 **Replace with:** 
 ```
-YOURTEXT\1
+YOUR_TEXT\1
 ```
 
 #### Explanation of the regular expression `^(.+)$`:
@@ -32,12 +32,12 @@ YOURTEXT\1
 - (.+): Captures one or more characters (any character except line breaks) in a group.
 - $: Anchors the match to the end of a line.
 
-#### Explanation of the replacement pattern `YOURTEXT\1`:
+#### Explanation of the replacement pattern `YOUR_TEXT\1`:
 
 - text: The string you want to add to the beginning of each line.
 - \1: Refers to the first capturing group (the entire line in this case).
 
-## 📝 To add "text" to the ending of every line in a text
+## 📝 To add "YOUR_TEXT" to the ending of every line in a text
 
 **Find what:**
 ```
@@ -45,7 +45,7 @@ YOURTEXT\1
 ```
 **Replace with:** 
 ```
-YOURTEXT
+YOUR_TEXT
 ```
 
 #### Explanation of the regular expression `^(.+)$`:
@@ -54,19 +54,19 @@ YOURTEXT
 - (.+): Captures one or more characters (any character except line breaks) in a group.
 - $: Anchors the match to the end of a line.
 
-#### Explanation of the replacement pattern `YOURTEXT`:
+#### Explanation of the replacement pattern `YOUR_TEXT`:
 
 - text: The string you want to add to the beginning of each line.
 
-## 📝 To removes the every line containing "YOURTEXT" a text
+## 📝 To removes the every line containing "YOUR_TEXT" a text
 
 **Find what:**
 ```
-.*YOURTEXT.*[\r]?[\n]
+.*YOUR_TEXT.*[\r]?[\n]
 ```
 **Replace with:** field empty.
 
-### Explanation of the regular expression `.*YOURTEXT.*[\r]?[\n]`:
+### Explanation of the regular expression `.*YOUR_TEXT.*[\r]?[\n]`:
 
 - .*: Matches any sequence of characters.
 - YOURTEXT: The specific text you're searching for. Replace it with the text you want to match.
@@ -82,7 +82,7 @@ Matching a URL: "/^(http|https)://[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*)?/" match
 
 
 
-## 📝 To remove everything after a "TARGET_TEXT" in each line in Notepad
+## 📝 To remove everything after a "YOUR_TEXT" in each line in Notepad
 
 **Find what:**
 ```
@@ -95,12 +95,9 @@ YOUR_TEXT
 
 #### Explanation of the regular expression `YOUR_TEXT.*$`:
 
-- `TARGET_TEXT`: Replace this with your specific text.
+- `YOUR_TEXT`: Replace this with your specific text.
 - `.*`: Matches any sequence of characters.
 - `$`: Matches the end of a line.
 
-This regular expression finds the specified text (`TARGET_TEXT`) followed by any characters (`.*`) until the end of the line (`$`). By replacing it with an empty string, it removes everything after "TARGET_TEXT" in each line.
+This regular expression finds the specified text (`YOUR_TEXT`) followed by any characters (`.*`) until the end of the line (`$`). By replacing it with an empty string, it removes everything after "TARGET_TEXT" in each line.
 
-
-
-Please ensure you have a backup of your original text before performing the replacement operation to avoid any unintended changes. Regular expressions can be powerful but should be used with caution.
