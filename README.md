@@ -74,9 +74,33 @@ YOURTEXT
 - [\r]?: Optionally matches a carriage return (CR, \r).
 - [\n]: Matches a line feed (LF, \n).
 
-
-
 Matching a phone number: "/\d{3}-\d{3}-\d{4}/" matches a phone number in the format of XXX-XXX-XXXX.
+
 Matching an email address: "/\w+@\w+.\w+/" matches an email address in the format of username@domain.com.
+
 Matching a URL: "/^(http|https)://[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*)?/" matches a URL in the format of http://www.example.com/page.html.
 
+
+
+## 📝 To remove everything after a "TARGET_TEXT" in each line in Notepad
+
+**Find what:**
+```
+YOUR_TEXT.*$
+```
+**Replace with:** 
+```
+YOUR_TEXT
+```
+
+#### Explanation of the regular expression `YOUR_TEXT.*$`:
+
+- `TARGET_TEXT`: Replace this with your specific text.
+- `.*`: Matches any sequence of characters.
+- `$`: Matches the end of a line.
+
+This regular expression finds the specified text (`TARGET_TEXT`) followed by any characters (`.*`) until the end of the line (`$`). By replacing it with an empty string, it removes everything after "TARGET_TEXT" in each line.
+
+
+
+Please ensure you have a backup of your original text before performing the replacement operation to avoid any unintended changes. Regular expressions can be powerful but should be used with caution.
