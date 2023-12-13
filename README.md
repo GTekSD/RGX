@@ -58,7 +58,7 @@ YOUR_TEXT
 
 - text: The string you want to add to the beginning of each line.
 
-## 📝 To removes the every line containing "YOUR_TEXT" a text
+## 📝 To removes the every line containing "YOUR_TEXT"
 
 **Find what:**
 ```
@@ -80,6 +80,22 @@ Matching an email address: `/\w+@\w+.\w+/` matches an email address in the forma
 
 Matching a URL: `/^(http|https)://[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*)?/` matches a URL in the format of http://www.example.com/page.html.
 
+## 📝 To removes the every line containing numbers
+
+**Find what:**
+```
+.*[0-9]+.*[\r]?[\n]
+```
+**Replace with:** field empty.
+
+### Explanation of the regular expression `.*[0-9]+.*[\r]?[\n]`:
+
+- .*: Matches any sequence of characters.
+- [0-9]: This matches any single digit.
+- +: This quantifier matches one or more occurrences of the preceding character or group, in this case, digits.
+- .*: Matches any sequence of characters.
+- [\r]?: Optionally matches a carriage return (CR, \r).
+- [\n]: Matches a line feed (LF, \n).
 
 
 ## 📝 To remove everything after a "YOUR_TEXT" in each line in Notepad
