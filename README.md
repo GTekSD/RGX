@@ -117,3 +117,13 @@ YOUR_TEXT
 
 This regular expression finds the specified text (`YOUR_TEXT`) followed by any characters (`.*`) until the end of the line (`$`). By replacing it with an empty string, it removes everything after `YOUR_TEXT` in each line.
 
+
+----------------------------------
+
+# Linux tools
+
+### To filter user names.
+```
+grep -oP '<value>\K[^<]+@example.com(?=</value>)' input.txt | sed 's/@example.com//g' | sort | uniq > outputfiltered.txt
+```
+
