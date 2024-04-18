@@ -117,6 +117,25 @@ YOUR_TEXT
 
 This regular expression finds the specified text (`YOUR_TEXT`) followed by any characters (`.*`) until the end of the line (`$`). By replacing it with an empty string, it removes everything after `YOUR_TEXT` in each line.
 
+## 📝 To remove everything before "YOUR_TEXT" in each line in Notepad
+
+**Find what:**
+```
+^.*?(?=YOUR_TEXT)
+```
+**Find what:** If YOUR_TEXT is a special charecter, then enter `\` before special charecter. For example YOUR_TEXT is `*`:
+```
+^.*?(?=\*)
+```
+
+**Replace with:** field empty.
+
+#### Explanation of the regular expression `YOUR_TEXT.*$`:
+
+- `YOUR_TEXT`: Replace this with your specific text.
+- `^`: Asserts the position at the start of the document.
+- `*?`: A non-greedy match for any characters.
+- `(?=YOUR_TEXT)`: A positive lookahead that ensures the match stops before “YOUR_TEXT”.
 
 ----------------------------------
 
